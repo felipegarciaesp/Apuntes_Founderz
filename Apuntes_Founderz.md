@@ -73,10 +73,27 @@ Reemplaza por: Escribe este correo electrónico formal utilizando un lenguaje pr
 
 Los modelos son mas eficientes cuando le hablamos en positivos. Los modelos tienden a responder mejor cuando se les dice que deben hacer frente a cuando se les dice que no deben hacer. Las instrucciones afirmativas permiten que el modelo procese la solicitud de forma inmedita y clara sin tener que hacer interpretaciones adicionales.
 
-Pide explicaciones adaptadas a distintos niveles. Si necesitamos entender algo y algún concepto, una estrategia es pedirle a la IA que nos la explique como si fuéramos un estudiante o un niño de 11 años.
+Pide explicaciones adaptadas a distintos niveles. Si necesitamos entender algo o algún concepto, una estrategia es pedirle a la IA que nos la explique como si fuéramos un estudiante o un niño de 11 años.
 
 Ejemplo:
 
 En vez de: ¿Qué es la inflación?
 
 Reemplaza por: Explícame como si no supiera nada de economía: ¿qué es la inflación?
+
+**Menciona una propina ficticia o una penalización.** La IA responde bien tanto a refuerzos positivos como a consecuencias ficticias. Si le pides que lo haga mejor a cambio de una propina o lo penalizas por no cumplir con ciertos requisitos, el modelo va a interpretar estas señales como instrucciones para ofrecer una respuesta mas precisa y detallada. Estas palabras actúan como señales que indican que deben priorizar la calidad, creatividad o cumplimiento de requisitos solicitados.
+
+Usa frases como "DEBES" para forzar a la IA a cumplir con un requisito.
+
+Que hable como un humano. Pidele que responda de manera natural, o como un humano. Le estoy pidiendo que hable de manera más relajada. 
+
+Usa palabras clave como 'piensa paso a paso'. Ejemplo:
+
+    - Explica cómo hacer una tortilla española. Piensa paso a paso desde la compra de ingredientes hasta servirla.
+    - Escribe un código en Python para iterar a través de 10 número y sumarlos todos. Piensa paso a paso.
+
+Con decirle a la IA que actúe paso a paso activas su capacidad de razonamiento secuencial y organizará su respuesta de forma más lógica y estructurada. 
+
+## Técnicas y prácticas 2
+
+Añadir el comentario "sé imparcial". Añade a tu prompt la frase "asegúrate que tu respuesta es imparcial y no se basa en estereotipos".
