@@ -59,6 +59,24 @@ O por ejemplo esto otro:
 
 Cuando estructuramos el mensaje de esta forma, la IA puede identificar de manera mas eficiente cada segmento e identificar que es lo que tiene que hacer.
 
-Usa ejemplos para guiar la respuesta. Ocupa ejemplos parecidos a lo que buscas.
+Usa ejemplos para guiar la respuesta. Ocupa ejemplos parecidos a lo que buscas. Los modelos de IA son muy buenos para captar y replicar patrones a aprtir de lo que le das como entrada. La IA no entiende de contexto como si lo haría un humano, pero sí sabe seguir patrones que se le dan.
 
-Especifica el publico al que va dirigido.
+Especifica el publico al que va dirigido. Para que estoy buscando esta respuesta? Esto permite a la IA ofrecer una salida mas efectiva. 
+
+Divide las tareas complejas en pasos más sencillos. Puedes tranformar la petición en una conversación en donde le vayas pidiendo a la IA realizar una tarea pero que sea paso a paso, en vez de hacerlo en un único prompt.
+
+Usa instrucciones en positivo. Ejemplo:
+
+En vez de: Escribe este correo electrónico, no uses lenguaje coloquial, evita abreviaturas, no incluyas emojis, y asegúrate de no ser demasiado formal.
+
+Reemplaza por: Escribe este correo electrónico formal utilizando un lenguaje profesional, incluyendo un saludo apropiado, manteniendo un tono respetuoso, y cerrando con una despedida cortés.
+
+Los modelos son mas eficientes cuando le hablamos en positivos. Los modelos tienden a responder mejor cuando se les dice que deben hacer frente a cuando se les dice que no deben hacer. Las instrucciones afirmativas permiten que el modelo procese la solicitud de forma inmedita y clara sin tener que hacer interpretaciones adicionales.
+
+Pide explicaciones adaptadas a distintos niveles. Si necesitamos entender algo y algún concepto, una estrategia es pedirle a la IA que nos la explique como si fuéramos un estudiante o un niño de 11 años.
+
+Ejemplo:
+
+En vez de: ¿Qué es la inflación?
+
+Reemplaza por: Explícame como si no supiera nada de economía: ¿qué es la inflación?
