@@ -96,4 +96,64 @@ Con decirle a la IA que actúe paso a paso activas su capacidad de razonamiento 
 
 ## Técnicas y prácticas 2
 
-Añadir el comentario "sé imparcial". Añade a tu prompt la frase "asegúrate que tu respuesta es imparcial y no se basa en estereotipos".
+Añadir el comentario "sé imparcial". Añade a tu prompt la frase "asegúrate que tu respuesta es imparcial y no se basa en estereotipos". Esto para que la IA no se vaya a los primeros datos de suconocimiento que pueden ser datos sesgados. Con esto activamos mecanismos internos que sirven para eliminar sesgos.
+
+Es bueno decirle a la IA que me pregunte lo que necesite. Con esto ayudo a la IA a que mejore el contexto y se ajuste a su respuesta.
+
+Asinga un rol al modelo, para tener una respuesta desde una perspectiva específica. Con esto van a adaptar tanto el tono como el contenido.
+
+Repetir palabras clave a la IA. Los modelos están hechos para identificar la relevancia de las palabras en función de la frecuencia de las palabras y el peso que tienen. Cuando repetimos palabras clave le indicamos al model oque esos elementos deben tener mayor protagonismo en su análisis y en su respuesta.
+
+Empieza tu la respuesta. Asi estamos dirigiendo al modelo a que responda en un tono y adopte un estilo. Esta tecnica es muy efectiva por el concepto de Modelo Autorregresivo.
+
+Añade toda la información necesaria en tu prompt, para que la IA me arroje la respuesta más completa posible.
+
+Corregir sin cambiar el estilo. Algunas veces le pediremos a la IA que corriga algún texto (gramaticalmente hablando), por lo que es útil que no se pierda la esencia y estilo del texto original.
+
+Define sus fuentes de información. Pide al prompt que use solo algunas fuentes o contenidos o que tipos de información debe emplear. Esto para que ajuste a lo que son tus indicaciones.
+
+Pide a la IA que imite un estilo. 
+
+Especifica un idioma y dialecto. Esto para que encaje a las personas a las que está dirigida la respuesta.
+
+Reflexiones:
+
+- Es importante verificar la información que proporciona la IA. A veces los modelos pueden alucinar (respuetas incorrectas o inventadas). Es fundamental corroborar.
+
+- Recibir diferentes respuestas al hacer la misma pregunta, **no es un error.** Esto puede ser muy util para tener ideas variadas, no es necesariamente malo.
+
+## Copilot, introducción y primeros pasos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
