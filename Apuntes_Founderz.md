@@ -124,6 +124,17 @@ Reflexiones:
 
 ## Copilot, introducción y primeros pasos.
 
+Podemos ingresar a copilot con los siguientes medios:
+
+    Copilot en la web.
+    Copilot en Edge, es una extensión.
+    Copilot en el Móvil, para verlo desde el celular.
+
+Iniciando desde una cuenta de empresa, nos aseguramos que la información que le entregue no saldrá del perímetro de seguridad de mi empresa.
+
+Copilot permite controlar las fuentes de información que utiliza para proporcionar respuestas. Con cada pregunta a Copilot voy a poder verificar de donde viene lo que me está diciendo.
+
+
 
 
 
