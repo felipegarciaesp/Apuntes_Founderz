@@ -134,6 +134,32 @@ Iniciando desde una cuenta de empresa, nos aseguramos que la información que le
 
 Copilot permite controlar las fuentes de información que utiliza para proporcionar respuestas. Con cada pregunta a Copilot voy a poder verificar de donde viene lo que me está diciendo.
 
+Es importante indicar si una respuesta de Copilot te gusta o no, pinchando el pulgar hacia arriba o hacia abajo.
+
+## Copilot Web
+
+Desde Edge podemos abrir Copilot como un plugin. Con éste puedo pedir un resumen de alguna página web en particular, puedo recortar una imagen de un video y pedirle a Copilot qué me diga qué es o puedo abrir un PDF desde el navegador y pedirle a Copilot que me responda algunas preguntas al respecto.
+
+En la clase se ve que las respuestas de Copilot se pueden descargar en un archivo Word, pero yo no puedo hacer eso.
+
+Puedes ocupar la funcionalidad de "Redactar" si lo que quieres es escribir algún texto para un blog o para LinkedIn. Puedes escoger el tono, el formato y la longitud. Puedes generar un borrador y pedirle que haga ajustes antes de publicarlo.
+
+La función de re-escritura te permite re-hacer, por ejemplo, alguna reseña que hayas hecho a algún producto o servicio. Puedes cambiar el tono, formato, longitud, etc. Esto lo debes hacer desde Edge. Llegas a esta funcionalidad al seleccionar el texto, haces click derecho y presionas en "Reescribir con Copilot".
+
+## Usando la IA desde el móvil
+
+Todas las funcionalidades anteriores se pueden ocupar desde el celular. Tienes que descargar la App de Copilot en tu celular.
+
+Puedes ocupar la opción de dictado por voz.
+
+## Conclusiones
+
+Copilot puede ser tu auténtico copiloto, sin perder de vista la seguridad y privacidad de tus datos. 
+
+Es importante recordar que Copilot es un complemento que amplifica tus capacidades, te ayuda a ser más eficiente **pero siempre debes mantener tu creatividad y tu juicio como pilares fundamentales.** 
+
+## Compositor de Software - Introducción y primeros pasos.
+
 
 
 
