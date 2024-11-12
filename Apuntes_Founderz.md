@@ -166,6 +166,9 @@ Un compositor de software es alguien que tiene una idea del software que quiere 
 
 Debe seguir un método para las instrucciones, ya que hay cosas que harán más fácil el proceso.
 
+## Compositor de Software - Juego de detectives
+
+Vamos a replicar el juego de "Where in the world is Carmen SanDiego?
 
 
 
