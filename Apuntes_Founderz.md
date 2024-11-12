@@ -160,7 +160,11 @@ Es importante recordar que Copilot es un complemento que amplifica tus capacidad
 
 ## Compositor de Software - Introducción y primeros pasos.
 
+Vamos a programar una pequeña aplicación sin saber programar!
 
+Un compositor de software es alguien que tiene una idea del software que quiere crear y va a saber explicar esta idea de forma efectiva a la IA.
+
+Debe seguir un método para las instrucciones, ya que hay cosas que harán más fácil el proceso.
 
 
 

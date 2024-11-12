@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Tablas de Multiplicar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f9fafb; }
+        .container { max-width: 400px; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="text-2xl font-bold mb-4">Práctica de Tablas de Multiplicar</h1>
+        <p id="question" class="text-xl mb-4"></p>
+        <input id="answer" type="number" class="border rounded p-2 mb-4 w-full" placeholder="Escribe tu respuesta aquí">
+        <button onclick="checkAnswer()" class="bg-blue-500 text-white rounded px-4 py-2">Comprobar</button>
+        <p id="message" class="text-lg mt-4"></p>
+        <p id="score" class="text-lg mt-2">Aciertos: 0 | Fallos: 0</p>
+    </div>
+    <script>
+        let correctAnswer;
+        let correctCount = 0;
+        let incorrectCount = 0;
+
+        function generateQuestion() {
+            const num1 = Math.floor(Math.random() * 10) + 1;
+            const num2 = Math.floor(Math.random() * 10) + 1;
+            correctAnswer = num1 * num2;
+            document.getElementById('question').innerText = `${num1} x ${num2}`;
+            document.getElementById('answer').value = '';
+            document.getElementById('message').innerText = '';
+        }
+
+        function checkAnswer() {
+            const userAnswer = parseInt(document.getElementById('answer').value);
+            if (userAnswer === correctAnswer) {
+                document.getElementById('message').innerText = '¡Correcto!';
+                correctCount++;
+            } else {
+                document.getElementById('message').innerText = `Incorrecto. La respuesta correcta es ${correctAnswer}.`;
+                incorrectCount++;
+            }
+            updateScore();
+            generateQuestion();
+        }
+
+        function updateScore() {
+            document.getElementById('score').innerText = `Aciertos: ${correctCount} | Fallos: ${incorrectCount}`;
+        }
+
+        window.onload = generateQuestion;
+    </script>
+</body>
+</html>
