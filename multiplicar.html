@@ -6,48 +6,90 @@
     <title>Práctica de Tablas de Multiplicar</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        body { display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f9fafb; }
-        .container { max-width: 400px; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f9fafb; font-family: 'Comic Sans MS', sans-serif; }
+        .container { max-width: 600px; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        .title { font-size: 2rem; color: #3b82f6; }
+        .question { font-size: 1.5rem; margin-bottom: 1rem; }
+        .input { font-size: 1.2rem; padding: 0.5rem; border-radius: 8px; border: 2px solid #3b82f6; }
+        .button { background-color: #3b82f6; color: white; padding: 0.5rem 1rem; border-radius: 8px; font-size: 1.2rem; margin-top: 1rem; }
+        .message { font-size: 1.2rem; margin-top: 1rem; }
+        .score { font-size: 1.2rem; margin-top: 0.5rem; }
+        .result { font-size: 2rem; color: #10b981; }
     </style>
 </head>
 <body>
     <div class="container text-center">
-        <h1 class="text-2xl font-bold mb-4">Práctica de Tablas de Multiplicar</h1>
-        <p id="question" class="text-xl mb-4"></p>
-        <input id="answer" type="number" class="border rounded p-2 mb-4 w-full" placeholder="Escribe tu respuesta aquí">
-        <button onclick="checkAnswer()" class="bg-blue-500 text-white rounded px-4 py-2">Comprobar</button>
-        <p id="message" class="text-lg mt-4"></p>
-        <p id="score" class="text-lg mt-2">Aciertos: 0 | Fallos: 0</p>
+        <h1 class="title font-bold mb-4">Práctica de Tablas de Multiplicar</h1>
+        <p id="question" class="question text-xl mb-4"></p>
+        <input id="answer" type="number" class="input border rounded p-2 mb-4 w-full" placeholder="Escribe tu respuesta aquí">
+        <button onclick="checkAnswer()" class="button bg-blue-500 text-white rounded px-4 py-2">Comprobar</button>
+        <p id="message" class="message text-lg mt-4"></p>
+        <p id="score" class="score text-lg mt-2">Aciertos: 0 | Fallos: 0 | Puntuación: 0</p>
+        <div id="timer" class="score text-lg mt-2"></div>
+        <div id="finalResult" class="result hidden"></div>
     </div>
     <script>
         let correctAnswer;
         let correctCount = 0;
         let incorrectCount = 0;
+        let score = 0;
+        let questionCount = 0;
+        let timerInterval;
 
         function generateQuestion() {
+            if (questionCount >= 10) {
+                showFinalResult();
+                return;
+            }
             const num1 = Math.floor(Math.random() * 10) + 1;
             const num2 = Math.floor(Math.random() * 10) + 1;
             correctAnswer = num1 * num2;
             document.getElementById('question').innerText = `${num1} x ${num2}`;
             document.getElementById('answer').value = '';
             document.getElementById('message').innerText = '';
+            startTimer();
         }
 
         function checkAnswer() {
             const userAnswer = parseInt(document.getElementById('answer').value);
+            clearInterval(timerInterval);
+            let points = 1000 - (10 - remainingTime) * 100;
             if (userAnswer === correctAnswer) {
                 document.getElementById('message').innerText = '¡Correcto!';
                 correctCount++;
+                score += points;
             } else {
                 document.getElementById('message').innerText = `Incorrecto. La respuesta correcta es ${correctAnswer}.`;
                 incorrectCount++;
             }
+            questionCount++;
             updateScore();
-            generateQuestion();
+            setTimeout(generateQuestion, 3000); // Mostrar nueva pregunta después de 3 segundos
         }
 
         function updateScore() {
-            document.getElementById('score').innerText = `Aciertos: ${correctCount} | Fallos: ${incorrectCount}`;
+            document.getElementById('score').innerText = `Aciertos: ${correctCount} | Fallos: ${incorrectCount} | Puntuación: ${score}`;
+        }
+
+        function showFinalResult() {
+            document.querySelector('.container').innerHTML = `<h1 class="title font-bold mb-4">¡Resultados!</h1>
+                <p class="result">Aciertos: ${correctCount}</p>
+                <p class="result">Fallos: ${incorrectCount}</p>
+                <p class="result">Puntuación Final: ${score}</p>`;
+        }
+
+        let remainingTime;
+        function startTimer() {
+            remainingTime = 10;
+            document.getElementById('timer').innerText = `Tiempo restante: ${remainingTime}s`;
+            timerInterval = setInterval(() => {
+                remainingTime--;
+                document.getElementById('timer').innerText = `Tiempo restante: ${remainingTime}s`;
+                if (remainingTime <= 0) {
+                    clearInterval(timerInterval);
+                    checkAnswer();
+                }
+            }, 1000);
         }
 
         window.onload = generateQuestion;
