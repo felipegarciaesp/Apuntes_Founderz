@@ -9,13 +9,16 @@
         .emoji {
             font-size: 5rem;
         }
+        .big-emoji {
+            font-size: 8rem;
+        }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-900 flex items-center justify-center min-h-screen">
-    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
-        <h1 class="text-2xl font-bold mb-4">¡Juego de Detectives!</h1>
+<body class="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-white flex items-center justify-center min-h-screen">
+    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg text-center text-gray-800">
+        <h1 class="text-3xl font-extrabold mb-4">🔍 Juego de Detectives 🕵️‍♂️</h1>
         <div id="game"></div>
-        <button id="start-button" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Iniciar Juego</button>
+        <button id="start-button" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">Iniciar Juego</button>
     </div>
 
     <script>
@@ -94,8 +97,8 @@
             const gameDiv = document.getElementById("game");
             gameDiv.innerHTML = `
                 <div class="text-center">
-                    <div class="emoji">${city.emoji}</div>
-                    <h2 class="text-xl font-bold mt-2">Robo en ${city.name}!</h2>
+                    <div class="big-emoji">🕵️‍♂️</div>
+                    <h2 class="text-xl font-bold mt-2">Robo en una ciudad famosa!</h2>
                     <p class="mt-2">Pistas:</p>
                     <ul class="list-disc list-inside">
                         ${city.clues.map(clue => `<li>${clue}</li>`).join('')}
@@ -103,7 +106,7 @@
                     <p class="mt-2">¿Dónde crees que fue el ladrón?</p>
                     <div class="mt-4">
                         ${cities.map((option, index) => `
-                            <button class="bg-gray-200 p-2 m-1 rounded" onclick="chooseCity(${index})">${option.name}</button>
+                            <button class="bg-gray-200 p-2 m-1 rounded text-black" onclick="chooseCity(${index})">${option.emoji} ${option.name}</button>
                         `).join('')}
                     </div>
                 </div>
@@ -125,9 +128,10 @@
             const gameDiv = document.getElementById("game");
             gameDiv.innerHTML = `
                 <div class="text-center">
+                    <div class="big-emoji">🎉</div>
                     <h2 class="text-xl font-bold">Juego terminado</h2>
                     <p>Puntuación final: ${score}</p>
-                    <button class="bg-blue-500 text-white py-2 px-4 rounded mt-4" onclick="startGame()">Jugar de nuevo</button>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded mt-4" onclick="startGame()">Jugar de nuevo</button>
                 </div>
             `;
             document.getElementById("start-button").style.display = "block";
