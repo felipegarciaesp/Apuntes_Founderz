@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Detectives</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .emoji {
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 flex items-center justify-center min-h-screen">
+    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-4">¡Juego de Detectives!</h1>
+        <div id="game"></div>
+        <button id="start-button" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Iniciar Juego</button>
+    </div>
+
+    <script>
+        const cities = [
+            {
+                name: "París",
+                emoji: "🗼",
+                clues: [
+                    "Es conocida como la Ciudad de la Luz.",
+                    "Aquí puedes encontrar el Museo del Louvre.",
+                    "Es famosa por su torre de hierro."
+                ],
+                facts: "París es la capital de Francia y es famosa por su arte, gastronomía y cultura."
+            },
+            {
+                name: "Tokio",
+                emoji: "🗼",
+                clues: [
+                    "Es una ciudad que combina la tradición y la modernidad.",
+                    "Tiene el cruce peatonal más transitado del mundo.",
+                    "Aquí puedes visitar el Palacio Imperial."
+                ],
+                facts: "Tokio es la capital de Japón y es conocida por sus rascacielos, templos y cultura pop."
+            },
+            {
+                name: "Nueva York",
+                emoji: "🗽",
+                clues: [
+                    "Es conocida como la Gran Manzana.",
+                    "Aquí puedes ver la Estatua de la Libertad.",
+                    "Es famosa por su Central Park y Times Square."
+                ],
+                facts: "Nueva York es una ciudad icónica de Estados Unidos, conocida por su influencia en el arte, la moda y los negocios."
+            },
+            {
+                name: "El Cairo",
+                emoji: "🕌",
+                clues: [
+                    "Es famosa por sus antiguas pirámides.",
+                    "Aquí puedes ver la Gran Esfinge de Giza.",
+                    "Está situada a orillas del río Nilo."
+                ],
+                facts: "El Cairo es la capital de Egipto y es conocida por su rica historia y monumentos antiguos."
+            },
+            {
+                name: "Sídney",
+                emoji: "🌉",
+                clues: [
+                    "Es famosa por su Casa de la Ópera.",
+                    "Aquí puedes disfrutar de Bondi Beach.",
+                    "Es la ciudad más grande de Australia."
+                ],
+                facts: "Sídney es una ciudad vibrante en Australia, conocida por sus playas, puertos y vida cultural."
+            }
+        ];
+
+        let currentCity = 0;
+        let score = 0;
+
+        document.getElementById("start-button").addEventListener("click", startGame);
+
+        function startGame() {
+            currentCity = 0;
+            score = 0;
+            document.getElementById("start-button").style.display = "none";
+            displayCity();
+        }
+
+        function displayCity() {
+            if (currentCity >= cities.length) {
+                endGame();
+                return;
+            }
+
+            const city = cities[currentCity];
+            const gameDiv = document.getElementById("game");
+            gameDiv.innerHTML = `
+                <div class="text-center">
+                    <div class="emoji">${city.emoji}</div>
+                    <h2 class="text-xl font-bold mt-2">Robo en ${city.name}!</h2>
+                    <p class="mt-2">Pistas:</p>
+                    <ul class="list-disc list-inside">
+                        ${city.clues.map(clue => `<li>${clue}</li>`).join('')}
+                    </ul>
+                    <p class="mt-2">¿Dónde crees que fue el ladrón?</p>
+                    <div class="mt-4">
+                        ${cities.map((option, index) => `
+                            <button class="bg-gray-200 p-2 m-1 rounded" onclick="chooseCity(${index})">${option.name}</button>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        function chooseCity(index) {
+            if (index === currentCity) {
+                score += 100;
+                alert("¡Correcto!");
+            } else {
+                alert("Incorrecto. El ladrón escapó.");
+            }
+            currentCity++;
+            displayCity();
+        }
+
+        function endGame() {
+            const gameDiv = document.getElementById("game");
+            gameDiv.innerHTML = `
+                <div class="text-center">
+                    <h2 class="text-xl font-bold">Juego terminado</h2>
+                    <p>Puntuación final: ${score}</p>
+                    <button class="bg-blue-500 text-white py-2 px-4 rounded mt-4" onclick="startGame()">Jugar de nuevo</button>
+                </div>
+            `;
+            document.getElementById("start-button").style.display = "block";
+        }
+    </script>
+</body>
+</html>
