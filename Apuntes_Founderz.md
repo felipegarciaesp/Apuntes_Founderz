@@ -172,9 +172,9 @@ Vamos a replicar el juego de "Where in the world is Carmen SanDiego?
 
 El código se encuentra en el archivo juego-detectives.html
 
-## Compositos de Software - Pomodoro Timer
+## Compositor de Software - Pomodoro Timer
 
-
+Ojo que en ocasiones puede ocurrir que el código no se alcanza a generar, debes darte cuenta si la IA ha generado todo el código o aún le faltan cosas por generar. Para lograr que continue puedes pedírselo directamente en el prompt o hacer click en el botón "Continuar generando código" que aparecerá a continuación del código. 
 
 
 
