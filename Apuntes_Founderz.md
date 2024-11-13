@@ -176,6 +176,12 @@ El código se encuentra en el archivo juego-detectives.html
 
 Ojo que en ocasiones puede ocurrir que el código no se alcanza a generar, debes darte cuenta si la IA ha generado todo el código o aún le faltan cosas por generar. Para lograr que continue puedes pedírselo directamente en el prompt o hacer click en el botón "Continuar generando código" que aparecerá a continuación del código. 
 
+El codigo se encuentra en el archivo pomodoro.html
+
+## Compositor de Software - Creando a partir de una imagen
+
+
+
 
 
 
