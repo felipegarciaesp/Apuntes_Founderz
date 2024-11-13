@@ -170,24 +170,11 @@ Debe seguir un método para las instrucciones, ya que hay cosas que harán más 
 
 Vamos a replicar el juego de "Where in the world is Carmen SanDiego?
 
+El código se encuentra en el archivo juego-detectives.html
 
-Crea una aplicación web para un juego de detectives al estilo Carmen Sandiego. 
-La aplicación debe:
+## Compositos de Software - Pomodoro Timer
 
-1. Presentar un escenario inicial de un robo en una ciudad famosa. 
-2. Ofrecer 3 pistas sobre el siguiente destino del ladrón (relacionadas con la geografía, cultura o historia del lugar). 
-3. Permitir al jugador elegir entre 3 posibles destinos basados en las pistas. 
-4. Tener al menos 5 ciudades diferentes para visitar durante la persecución. 
-5. Incluir un sistema de puntos basado en la rapidez y precisión de las decisiones del jugador. 
-6. Ofrecer datos educativos interesantes sobre cada ciudad visitada. 
-7. Tener un final donde el jugador intenta identificar al ladrón entre varios sospechosos. 
-8. Incluir un diseño atractivo y responsivo utilizando Tailwind CSS, con emojis de gran tamaño representativos de cada ciudad. 
-9. Contener todo el código HTML, CSS y JavaScript en un solo archivo. 
-10. Cargar Tailwind CSS desde un CDN. 
-11. Funcionar completamente en el lado del cliente, sin necesidad de servidor. 
-12. Proporcionar instrucciones claras sobre cómo abrir y jugar con un doble clic. 
 
-Genera el código completo y asegúrate de que se pueda ejecutar haciendo doble clic en el archivo HTML resultante. 
 
 
 
