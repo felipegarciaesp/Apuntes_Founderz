@@ -180,6 +180,10 @@ El codigo se encuentra en el archivo pomodoro.html
 
 ## Compositor de Software - Creando a partir de una imagen
 
+Se puede pedir a la IA que cree una aplicación sólo con darle una foto y un par de instrucciones al respecto.
+
+## Compositor de Software - Guardando y leyendo datos - Diario Personal
+
 
 
 
