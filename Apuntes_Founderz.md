@@ -184,7 +184,9 @@ Se puede pedir a la IA que cree una aplicación sólo con darle una foto y un pa
 
 ## Compositor de Software - Guardando y leyendo datos - Diario Personal
 
+LocalStorage: algo que los navegadores modernos tienen para guardar datos dentro de un espacio que tiene el propio navegador. Aunque cerremos el navegador, los datos seguirán ahí. Es distinto a las cookies, si borras las cookies lo almacenado en LocalStorage seguirá ahí.
 
+Aca se hace una app web de un diario personal. La idea es hacer una app donde puedas guardar algo y que siga ahí cuando cierres el navegador.
 
 
 
