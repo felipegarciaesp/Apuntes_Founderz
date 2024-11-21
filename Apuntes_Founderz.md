@@ -188,6 +188,8 @@ LocalStorage: algo que los navegadores modernos tienen para guardar datos dentro
 
 Aca se hace una app web de un diario personal. La idea es hacer una app donde puedas guardar algo y que siga ahí cuando cierres el navegador.
 
+## IA Responsable - Toolkit para el Uso Responsable de IA
+
 
 
 
